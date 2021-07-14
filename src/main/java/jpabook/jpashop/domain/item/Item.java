@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Getter
+@Getter @Setter
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) // 한 테이블에 전부 때려박기
 @DiscriminatorColumn(name = "dtype") //
 public abstract class Item {
